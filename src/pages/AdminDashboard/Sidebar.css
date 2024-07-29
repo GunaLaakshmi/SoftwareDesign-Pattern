@@ -1,0 +1,10 @@
+.sidebar {
+    width: 240px;
+    background-color: #ff7480;
+    color: white;
+  }
+  
+  .sidebar .MuiListItemIcon-root {
+    color: white;
+  }
+  

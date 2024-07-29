@@ -1,0 +1,64 @@
+.hero {
+  position: relative;
+}
+
+.card-img-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+}
+
+.top-center-text {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.main-text {
+  color: white;
+  font-weight: bold;
+  transition: transform 0.2s;
+  font-size: xx-large;
+}
+
+.sub-text {
+  color: white;
+  font-weight: bold;
+  transition: transform 0.2s;
+}
+
+.main-text:hover, .sub-text:hover {
+  transform: scale(1.1);
+}
+
+.date-container {
+  margin-top: 100px;
+}
+
+.date-label {
+  color: white;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.date-input {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+}
+
+@media (max-width: 767px) {
+  .date-inputs {
+    flex-direction: column;
+  }
+
+  .date-label {
+    width: 100%;
+  }
+
+  .date-input {
+    width: 100%;
+  }
+}

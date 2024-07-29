@@ -1,0 +1,30 @@
+.product-details {
+    margin-top: 20px;
+    overflow-x: auto;
+  }
+  
+  .product-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .product-table th, .product-table td {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+  }
+  
+  .product-table th {
+    background-color: #f2f2f2;
+    text-align: left;
+  }
+  
+  .product-table td {
+    text-align: left;
+  }
+  
+  @media (max-width: 768px) {
+    .product-table th, .product-table td {
+      font-size: 0.9rem;
+    }
+  }
+  
