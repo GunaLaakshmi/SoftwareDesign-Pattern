@@ -1,9 +1,10 @@
 import React from "react";
-import { useSelector, useDispatch } from "react-redux";
-import { addCart, delCart } from "../redux/action";
+import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import { addCart, delCart } from "../redux/action";
+import "./Cart.css"; // Import the CSS file
 
 const Cart = () => {
   const state = useSelector((state) => state.handleCart);
@@ -130,10 +131,12 @@ const Cart = () => {
   return (
     <>
       <Navbar />
-      <div className="container my-3 py-3">
-        <h1 className="text-center">Cart</h1>
-        <hr />
-        {state.length > 0 ? <ShowCart /> : <EmptyCart />}
+      <div className="cart-background">
+        <div className="container my-3 py-3 cart-content">
+          <h1 className="text-center">Cart</h1>
+          <hr />
+          {state.length > 0 ? <ShowCart /> : <EmptyCart />}
+        </div>
       </div>
       <Footer />
     </>

@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import { useDispatch } from "react-redux";
-import { addCart } from "../redux/action";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
+import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
+import { addCart } from "../redux/action";
 
 const Products = () => {
   const [data, setData] = useState([
@@ -27,7 +27,7 @@ const Products = () => {
       id: 3,
       title: "Product 3",
       category: "jewelery",
-      image: "https://www.bridesofsydney.com.au/wp-content/uploads/2019/08/C512F.jpg",
+      image: "https://tiimg.tistatic.com/fp/1/008/243/ladies-sleeveless-long-length-cotton-gown-for-party-wear-831.jpg",
       price: 4199.99,
       description: "This is a description for product 3",
     },
@@ -35,7 +35,7 @@ const Products = () => {
       id: 4,
       title: "Product 4",
       category: "electronics",
-      image: "https://dresseskhazana.com/wp-content/uploads/2017/06/stylish-open-shirt-dresses-for-girls-2017.jpg",
+      image: "https://www.swathiveldandistudio.com/cdn/shop/products/Lehanga_Red_1_b03d3149-0b3e-4554-9228-41ae38f65ff5.webp?v=1706209858&width=2048",
       price: 2499.99,
       description: "This is a description for product 4",
     },
@@ -51,7 +51,7 @@ const Products = () => {
       id: 6,
       title: "Product 6",
       category: "women's clothing",
-      image: "https://i.pinimg.com/originals/22/39/33/22393354b13d1ea1f57dcbbf9bb5729b.jpg",
+      image: "https://i.pinimg.com/736x/c8/7b/6d/c87b6d22b18509d84bfa2db620ee83e3.jpg",
       price: 2109.99,
       description: "This is a description for product 6",
     },
